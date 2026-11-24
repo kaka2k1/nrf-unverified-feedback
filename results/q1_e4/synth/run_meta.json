@@ -1,0 +1,54 @@
+{
+ "args": {
+  "setup": "synth",
+  "learners": [
+   "tfidf",
+   "bge_small",
+   "bge_base"
+  ],
+  "seeds": 20,
+  "workers": 3,
+  "methods": [
+   "verified_only",
+   "naive",
+   "verifier_corrected",
+   "conf_filter",
+   "source_prior",
+   "ctx_eb",
+   "ca_eb",
+   "self_train",
+   "oracle_clean",
+   "ds_source",
+   "crowd_seed",
+   "ctx_crowd",
+   "mace",
+   "rgpo_style",
+   "small_loss",
+   "coteach"
+  ],
+  "cache": "results/q1_e4/cache",
+  "embed_only": false,
+  "out": "results/q1_e4/synth"
+ },
+ "rhos": [
+  0.02,
+  0.05,
+  0.1,
+  0.25
+ ],
+ "rho_curve": [
+  0.0,
+  0.02,
+  0.05,
+  0.1,
+  0.15,
+  0.25,
+  0.35,
+  0.5,
+  0.75,
+  1.0
+ ],
+ "tau": 0.5,
+ "gamma": 2.0,
+ "sec": 423.36574506759644
+}

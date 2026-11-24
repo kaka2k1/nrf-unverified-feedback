@@ -1,0 +1,13 @@
+noise_type,rho,method,learners,rates,monotone_decreasing
+context,0.02,ca_eb,tfidf < bge_small < bge_base,"4.75 , 4.87 , 5.30",False
+context,0.02,ctx_eb,tfidf < bge_small < bge_base,"7.02 , 3.67 , 2.40",True
+context,0.02,source_prior,tfidf < bge_small < bge_base,"6.47 , 2.58 , 1.68",True
+context,0.05,ca_eb,tfidf < bge_small < bge_base,"2.41 , 2.30 , 2.72",False
+context,0.05,ctx_eb,tfidf < bge_small < bge_base,"3.69 , 1.89 , 1.29",True
+context,0.05,source_prior,tfidf < bge_small < bge_base,"2.83 , 1.57 , 0.95",True
+source,0.02,ca_eb,tfidf < bge_small < bge_base,"4.90 , 5.30 , 4.59",False
+source,0.02,ctx_eb,tfidf < bge_small < bge_base,"7.89 , 4.35 , 3.03",True
+source,0.02,source_prior,tfidf < bge_small < bge_base,"8.94 , 4.97 , 4.01",True
+source,0.05,ca_eb,tfidf < bge_small < bge_base,"2.39 , 2.43 , 1.96",False
+source,0.05,ctx_eb,tfidf < bge_small < bge_base,"3.52 , 2.26 , 1.45",True
+source,0.05,source_prior,tfidf < bge_small < bge_base,"3.93 , 2.38 , 1.74",True

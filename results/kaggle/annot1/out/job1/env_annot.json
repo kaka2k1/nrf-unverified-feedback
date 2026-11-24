@@ -1,0 +1,1 @@
+{"gpu": "Tesla T4", "torch": "2.11.0+cu130", "transformers": "5.20.2", "dtype": "torch.float16"}

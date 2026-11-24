@@ -1,0 +1,26 @@
+{
+ "seeds": 8,
+ "noise": 0.4,
+ "noise_type": [
+  "source",
+  "context"
+ ],
+ "verify_rate": [
+  0.1,
+  0.25
+ ],
+ "methods": [
+  "verified_only",
+  "source_prior",
+  "ctx_eb",
+  "ca_eb",
+  "oracle_clean"
+ ],
+ "strategies": [
+  "random",
+  "balanced",
+  "cell_active",
+  "disagree"
+ ],
+ "out": "results/cpu_active"
+}

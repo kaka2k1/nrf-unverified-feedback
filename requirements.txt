@@ -1,0 +1,12 @@
+# CPU experiments
+numpy>=2.0
+pandas>=2.0
+scipy>=1.11
+scikit-learn>=1.5
+matplotlib>=3.8
+pytest>=8
+# GPU / LLM experiments (annotation, QLoRA learners, frozen embeddings)
+torch>=2.4
+transformers>=4.45
+peft>=0.12
+bitsandbytes>=0.43

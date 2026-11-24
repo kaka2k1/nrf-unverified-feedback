@@ -1,0 +1,1120 @@
+{
+ "args": {
+  "seeds": 8,
+  "noise": [
+   0.4
+  ],
+  "noise_type": [
+   "context",
+   "source"
+  ],
+  "verify_rate": [
+   0.1,
+   0.25
+  ],
+  "tau": 0.5,
+  "gamma": 2.0,
+  "methods": [
+   "naive",
+   "verified_only",
+   "verifier_corrected",
+   "conf_filter",
+   "source_prior",
+   "vcfl",
+   "ctx_prior",
+   "ca_vcfl",
+   "oracle_clean"
+  ],
+  "out": "results/cpu_policy"
+ },
+ "metas": [
+  {
+   "seed": 1000,
+   "noise": 0.4,
+   "noise_type": "context",
+   "verify_rate": 0.1,
+   "train_domains": [
+    "billing",
+    "shipping",
+    "inventory",
+    "hr",
+    "calendar",
+    "crm",
+    "library",
+    "files"
+   ],
+   "heldout_domains": [
+    "tickets",
+    "clinic",
+    "fleet",
+    "school"
+   ],
+   "policy": {
+    "billing": "none",
+    "shipping": "versioned",
+    "inventory": "none",
+    "hr": "none",
+    "calendar": "soft_delete",
+    "crm": "soft_delete",
+    "library": "versioned",
+    "files": "versioned"
+   },
+   "realized_noise": 0.403125,
+   "verified_frac": 0.0984375
+  },
+  {
+   "seed": 1001,
+   "noise": 0.4,
+   "noise_type": "context",
+   "verify_rate": 0.1,
+   "train_domains": [
+    "shipping",
+    "billing",
+    "school",
+    "tickets",
+    "inventory",
+    "crm",
+    "hr",
+    "library"
+   ],
+   "heldout_domains": [
+    "files",
+    "fleet",
+    "clinic",
+    "calendar"
+   ],
+   "policy": {
+    "shipping": "none",
+    "billing": "soft_delete",
+    "school": "soft_delete",
+    "tickets": "versioned",
+    "inventory": "soft_delete",
+    "crm": "versioned",
+    "hr": "none",
+    "library": "none"
+   },
+   "realized_noise": 0.4203125,
+   "verified_frac": 0.084375
+  },
+  {
+   "seed": 1002,
+   "noise": 0.4,
+   "noise_type": "context",
+   "verify_rate": 0.1,
+   "train_domains": [
+    "calendar",
+    "files",
+    "billing",
+    "hr",
+    "tickets",
+    "inventory",
+    "school",
+    "clinic"
+   ],
+   "heldout_domains": [
+    "shipping",
+    "library",
+    "crm",
+    "fleet"
+   ],
+   "policy": {
+    "calendar": "versioned",
+    "files": "none",
+    "billing": "versioned",
+    "hr": "none",
+    "tickets": "none",
+    "inventory": "versioned",
+    "school": "soft_delete",
+    "clinic": "soft_delete"
+   },
+   "realized_noise": 0.4,
+   "verified_frac": 0.109375
+  },
+  {
+   "seed": 1003,
+   "noise": 0.4,
+   "noise_type": "context",
+   "verify_rate": 0.1,
+   "train_domains": [
+    "tickets",
+    "clinic",
+    "shipping",
+    "school",
+    "crm",
+    "hr",
+    "files",
+    "calendar"
+   ],
+   "heldout_domains": [
+    "inventory",
+    "library",
+    "billing",
+    "fleet"
+   ],
+   "policy": {
+    "tickets": "soft_delete",
+    "clinic": "none",
+    "shipping": "versioned",
+    "school": "none",
+    "crm": "none",
+    "hr": "versioned",
+    "files": "versioned",
+    "calendar": "none"
+   },
+   "realized_noise": 0.4125,
+   "verified_frac": 0.1078125
+  },
+  {
+   "seed": 1004,
+   "noise": 0.4,
+   "noise_type": "context",
+   "verify_rate": 0.1,
+   "train_domains": [
+    "library",
+    "school",
+    "files",
+    "inventory",
+    "clinic",
+    "crm",
+    "fleet",
+    "billing"
+   ],
+   "heldout_domains": [
+    "shipping",
+    "calendar",
+    "hr",
+    "tickets"
+   ],
+   "policy": {
+    "library": "none",
+    "school": "soft_delete",
+    "files": "versioned",
+    "inventory": "versioned",
+    "clinic": "versioned",
+    "crm": "soft_delete",
+    "fleet": "soft_delete",
+    "billing": "none"
+   },
+   "realized_noise": 0.3953125,
+   "verified_frac": 0.0796875
+  },
+  {
+   "seed": 1005,
+   "noise": 0.4,
+   "noise_type": "context",
+   "verify_rate": 0.1,
+   "train_domains": [
+    "shipping",
+    "tickets",
+    "school",
+    "clinic",
+    "billing",
+    "inventory",
+    "files",
+    "hr"
+   ],
+   "heldout_domains": [
+    "crm",
+    "calendar",
+    "fleet",
+    "library"
+   ],
+   "policy": {
+    "shipping": "soft_delete",
+    "tickets": "none",
+    "school": "versioned",
+    "clinic": "versioned",
+    "billing": "soft_delete",
+    "inventory": "versioned",
+    "files": "none",
+    "hr": "versioned"
+   },
+   "realized_noise": 0.4046875,
+   "verified_frac": 0.1046875
+  },
+  {
+   "seed": 1006,
+   "noise": 0.4,
+   "noise_type": "context",
+   "verify_rate": 0.1,
+   "train_domains": [
+    "tickets",
+    "crm",
+    "clinic",
+    "inventory",
+    "library",
+    "school",
+    "fleet",
+    "files"
+   ],
+   "heldout_domains": [
+    "calendar",
+    "shipping",
+    "hr",
+    "billing"
+   ],
+   "policy": {
+    "tickets": "none",
+    "crm": "versioned",
+    "clinic": "none",
+    "inventory": "versioned",
+    "library": "none",
+    "school": "versioned",
+    "fleet": "none",
+    "files": "none"
+   },
+   "realized_noise": 0.40625,
+   "verified_frac": 0.0734375
+  },
+  {
+   "seed": 1007,
+   "noise": 0.4,
+   "noise_type": "context",
+   "verify_rate": 0.1,
+   "train_domains": [
+    "fleet",
+    "hr",
+    "library",
+    "shipping",
+    "school",
+    "calendar",
+    "clinic",
+    "crm"
+   ],
+   "heldout_domains": [
+    "inventory",
+    "billing",
+    "files",
+    "tickets"
+   ],
+   "policy": {
+    "fleet": "soft_delete",
+    "hr": "none",
+    "library": "none",
+    "shipping": "versioned",
+    "school": "soft_delete",
+    "calendar": "versioned",
+    "clinic": "soft_delete",
+    "crm": "none"
+   },
+   "realized_noise": 0.3890625,
+   "verified_frac": 0.1
+  },
+  {
+   "seed": 1000,
+   "noise": 0.4,
+   "noise_type": "context",
+   "verify_rate": 0.25,
+   "train_domains": [
+    "billing",
+    "shipping",
+    "inventory",
+    "hr",
+    "calendar",
+    "crm",
+    "library",
+    "files"
+   ],
+   "heldout_domains": [
+    "tickets",
+    "clinic",
+    "fleet",
+    "school"
+   ],
+   "policy": {
+    "billing": "none",
+    "shipping": "versioned",
+    "inventory": "none",
+    "hr": "none",
+    "calendar": "soft_delete",
+    "crm": "soft_delete",
+    "library": "versioned",
+    "files": "versioned"
+   },
+   "realized_noise": 0.403125,
+   "verified_frac": 0.246875
+  },
+  {
+   "seed": 1001,
+   "noise": 0.4,
+   "noise_type": "context",
+   "verify_rate": 0.25,
+   "train_domains": [
+    "shipping",
+    "billing",
+    "school",
+    "tickets",
+    "inventory",
+    "crm",
+    "hr",
+    "library"
+   ],
+   "heldout_domains": [
+    "files",
+    "fleet",
+    "clinic",
+    "calendar"
+   ],
+   "policy": {
+    "shipping": "none",
+    "billing": "soft_delete",
+    "school": "soft_delete",
+    "tickets": "versioned",
+    "inventory": "soft_delete",
+    "crm": "versioned",
+    "hr": "none",
+    "library": "none"
+   },
+   "realized_noise": 0.4203125,
+   "verified_frac": 0.221875
+  },
+  {
+   "seed": 1002,
+   "noise": 0.4,
+   "noise_type": "context",
+   "verify_rate": 0.25,
+   "train_domains": [
+    "calendar",
+    "files",
+    "billing",
+    "hr",
+    "tickets",
+    "inventory",
+    "school",
+    "clinic"
+   ],
+   "heldout_domains": [
+    "shipping",
+    "library",
+    "crm",
+    "fleet"
+   ],
+   "policy": {
+    "calendar": "versioned",
+    "files": "none",
+    "billing": "versioned",
+    "hr": "none",
+    "tickets": "none",
+    "inventory": "versioned",
+    "school": "soft_delete",
+    "clinic": "soft_delete"
+   },
+   "realized_noise": 0.4,
+   "verified_frac": 0.2546875
+  },
+  {
+   "seed": 1003,
+   "noise": 0.4,
+   "noise_type": "context",
+   "verify_rate": 0.25,
+   "train_domains": [
+    "tickets",
+    "clinic",
+    "shipping",
+    "school",
+    "crm",
+    "hr",
+    "files",
+    "calendar"
+   ],
+   "heldout_domains": [
+    "inventory",
+    "library",
+    "billing",
+    "fleet"
+   ],
+   "policy": {
+    "tickets": "soft_delete",
+    "clinic": "none",
+    "shipping": "versioned",
+    "school": "none",
+    "crm": "none",
+    "hr": "versioned",
+    "files": "versioned",
+    "calendar": "none"
+   },
+   "realized_noise": 0.4125,
+   "verified_frac": 0.26875
+  },
+  {
+   "seed": 1004,
+   "noise": 0.4,
+   "noise_type": "context",
+   "verify_rate": 0.25,
+   "train_domains": [
+    "library",
+    "school",
+    "files",
+    "inventory",
+    "clinic",
+    "crm",
+    "fleet",
+    "billing"
+   ],
+   "heldout_domains": [
+    "shipping",
+    "calendar",
+    "hr",
+    "tickets"
+   ],
+   "policy": {
+    "library": "none",
+    "school": "soft_delete",
+    "files": "versioned",
+    "inventory": "versioned",
+    "clinic": "versioned",
+    "crm": "soft_delete",
+    "fleet": "soft_delete",
+    "billing": "none"
+   },
+   "realized_noise": 0.3953125,
+   "verified_frac": 0.246875
+  },
+  {
+   "seed": 1005,
+   "noise": 0.4,
+   "noise_type": "context",
+   "verify_rate": 0.25,
+   "train_domains": [
+    "shipping",
+    "tickets",
+    "school",
+    "clinic",
+    "billing",
+    "inventory",
+    "files",
+    "hr"
+   ],
+   "heldout_domains": [
+    "crm",
+    "calendar",
+    "fleet",
+    "library"
+   ],
+   "policy": {
+    "shipping": "soft_delete",
+    "tickets": "none",
+    "school": "versioned",
+    "clinic": "versioned",
+    "billing": "soft_delete",
+    "inventory": "versioned",
+    "files": "none",
+    "hr": "versioned"
+   },
+   "realized_noise": 0.4046875,
+   "verified_frac": 0.228125
+  },
+  {
+   "seed": 1006,
+   "noise": 0.4,
+   "noise_type": "context",
+   "verify_rate": 0.25,
+   "train_domains": [
+    "tickets",
+    "crm",
+    "clinic",
+    "inventory",
+    "library",
+    "school",
+    "fleet",
+    "files"
+   ],
+   "heldout_domains": [
+    "calendar",
+    "shipping",
+    "hr",
+    "billing"
+   ],
+   "policy": {
+    "tickets": "none",
+    "crm": "versioned",
+    "clinic": "none",
+    "inventory": "versioned",
+    "library": "none",
+    "school": "versioned",
+    "fleet": "none",
+    "files": "none"
+   },
+   "realized_noise": 0.40625,
+   "verified_frac": 0.215625
+  },
+  {
+   "seed": 1007,
+   "noise": 0.4,
+   "noise_type": "context",
+   "verify_rate": 0.25,
+   "train_domains": [
+    "fleet",
+    "hr",
+    "library",
+    "shipping",
+    "school",
+    "calendar",
+    "clinic",
+    "crm"
+   ],
+   "heldout_domains": [
+    "inventory",
+    "billing",
+    "files",
+    "tickets"
+   ],
+   "policy": {
+    "fleet": "soft_delete",
+    "hr": "none",
+    "library": "none",
+    "shipping": "versioned",
+    "school": "soft_delete",
+    "calendar": "versioned",
+    "clinic": "soft_delete",
+    "crm": "none"
+   },
+   "realized_noise": 0.3890625,
+   "verified_frac": 0.28125
+  },
+  {
+   "seed": 1000,
+   "noise": 0.4,
+   "noise_type": "source",
+   "verify_rate": 0.1,
+   "train_domains": [
+    "billing",
+    "shipping",
+    "inventory",
+    "hr",
+    "calendar",
+    "crm",
+    "library",
+    "files"
+   ],
+   "heldout_domains": [
+    "tickets",
+    "clinic",
+    "fleet",
+    "school"
+   ],
+   "policy": {
+    "billing": "none",
+    "shipping": "versioned",
+    "inventory": "none",
+    "hr": "none",
+    "calendar": "soft_delete",
+    "crm": "soft_delete",
+    "library": "versioned",
+    "files": "versioned"
+   },
+   "realized_noise": 0.40625,
+   "verified_frac": 0.096875
+  },
+  {
+   "seed": 1001,
+   "noise": 0.4,
+   "noise_type": "source",
+   "verify_rate": 0.1,
+   "train_domains": [
+    "shipping",
+    "billing",
+    "school",
+    "tickets",
+    "inventory",
+    "crm",
+    "hr",
+    "library"
+   ],
+   "heldout_domains": [
+    "files",
+    "fleet",
+    "clinic",
+    "calendar"
+   ],
+   "policy": {
+    "shipping": "none",
+    "billing": "soft_delete",
+    "school": "soft_delete",
+    "tickets": "versioned",
+    "inventory": "soft_delete",
+    "crm": "versioned",
+    "hr": "none",
+    "library": "none"
+   },
+   "realized_noise": 0.41875,
+   "verified_frac": 0.08125
+  },
+  {
+   "seed": 1002,
+   "noise": 0.4,
+   "noise_type": "source",
+   "verify_rate": 0.1,
+   "train_domains": [
+    "calendar",
+    "files",
+    "billing",
+    "hr",
+    "tickets",
+    "inventory",
+    "school",
+    "clinic"
+   ],
+   "heldout_domains": [
+    "shipping",
+    "library",
+    "crm",
+    "fleet"
+   ],
+   "policy": {
+    "calendar": "versioned",
+    "files": "none",
+    "billing": "versioned",
+    "hr": "none",
+    "tickets": "none",
+    "inventory": "versioned",
+    "school": "soft_delete",
+    "clinic": "soft_delete"
+   },
+   "realized_noise": 0.371875,
+   "verified_frac": 0.1125
+  },
+  {
+   "seed": 1003,
+   "noise": 0.4,
+   "noise_type": "source",
+   "verify_rate": 0.1,
+   "train_domains": [
+    "tickets",
+    "clinic",
+    "shipping",
+    "school",
+    "crm",
+    "hr",
+    "files",
+    "calendar"
+   ],
+   "heldout_domains": [
+    "inventory",
+    "library",
+    "billing",
+    "fleet"
+   ],
+   "policy": {
+    "tickets": "soft_delete",
+    "clinic": "none",
+    "shipping": "versioned",
+    "school": "none",
+    "crm": "none",
+    "hr": "versioned",
+    "files": "versioned",
+    "calendar": "none"
+   },
+   "realized_noise": 0.396875,
+   "verified_frac": 0.1078125
+  },
+  {
+   "seed": 1004,
+   "noise": 0.4,
+   "noise_type": "source",
+   "verify_rate": 0.1,
+   "train_domains": [
+    "library",
+    "school",
+    "files",
+    "inventory",
+    "clinic",
+    "crm",
+    "fleet",
+    "billing"
+   ],
+   "heldout_domains": [
+    "shipping",
+    "calendar",
+    "hr",
+    "tickets"
+   ],
+   "policy": {
+    "library": "none",
+    "school": "soft_delete",
+    "files": "versioned",
+    "inventory": "versioned",
+    "clinic": "versioned",
+    "crm": "soft_delete",
+    "fleet": "soft_delete",
+    "billing": "none"
+   },
+   "realized_noise": 0.3828125,
+   "verified_frac": 0.075
+  },
+  {
+   "seed": 1005,
+   "noise": 0.4,
+   "noise_type": "source",
+   "verify_rate": 0.1,
+   "train_domains": [
+    "shipping",
+    "tickets",
+    "school",
+    "clinic",
+    "billing",
+    "inventory",
+    "files",
+    "hr"
+   ],
+   "heldout_domains": [
+    "crm",
+    "calendar",
+    "fleet",
+    "library"
+   ],
+   "policy": {
+    "shipping": "soft_delete",
+    "tickets": "none",
+    "school": "versioned",
+    "clinic": "versioned",
+    "billing": "soft_delete",
+    "inventory": "versioned",
+    "files": "none",
+    "hr": "versioned"
+   },
+   "realized_noise": 0.38125,
+   "verified_frac": 0.103125
+  },
+  {
+   "seed": 1006,
+   "noise": 0.4,
+   "noise_type": "source",
+   "verify_rate": 0.1,
+   "train_domains": [
+    "tickets",
+    "crm",
+    "clinic",
+    "inventory",
+    "library",
+    "school",
+    "fleet",
+    "files"
+   ],
+   "heldout_domains": [
+    "calendar",
+    "shipping",
+    "hr",
+    "billing"
+   ],
+   "policy": {
+    "tickets": "none",
+    "crm": "versioned",
+    "clinic": "none",
+    "inventory": "versioned",
+    "library": "none",
+    "school": "versioned",
+    "fleet": "none",
+    "files": "none"
+   },
+   "realized_noise": 0.390625,
+   "verified_frac": 0.0734375
+  },
+  {
+   "seed": 1007,
+   "noise": 0.4,
+   "noise_type": "source",
+   "verify_rate": 0.1,
+   "train_domains": [
+    "fleet",
+    "hr",
+    "library",
+    "shipping",
+    "school",
+    "calendar",
+    "clinic",
+    "crm"
+   ],
+   "heldout_domains": [
+    "inventory",
+    "billing",
+    "files",
+    "tickets"
+   ],
+   "policy": {
+    "fleet": "soft_delete",
+    "hr": "none",
+    "library": "none",
+    "shipping": "versioned",
+    "school": "soft_delete",
+    "calendar": "versioned",
+    "clinic": "soft_delete",
+    "crm": "none"
+   },
+   "realized_noise": 0.409375,
+   "verified_frac": 0.1015625
+  },
+  {
+   "seed": 1000,
+   "noise": 0.4,
+   "noise_type": "source",
+   "verify_rate": 0.25,
+   "train_domains": [
+    "billing",
+    "shipping",
+    "inventory",
+    "hr",
+    "calendar",
+    "crm",
+    "library",
+    "files"
+   ],
+   "heldout_domains": [
+    "tickets",
+    "clinic",
+    "fleet",
+    "school"
+   ],
+   "policy": {
+    "billing": "none",
+    "shipping": "versioned",
+    "inventory": "none",
+    "hr": "none",
+    "calendar": "soft_delete",
+    "crm": "soft_delete",
+    "library": "versioned",
+    "files": "versioned"
+   },
+   "realized_noise": 0.40625,
+   "verified_frac": 0.246875
+  },
+  {
+   "seed": 1001,
+   "noise": 0.4,
+   "noise_type": "source",
+   "verify_rate": 0.25,
+   "train_domains": [
+    "shipping",
+    "billing",
+    "school",
+    "tickets",
+    "inventory",
+    "crm",
+    "hr",
+    "library"
+   ],
+   "heldout_domains": [
+    "files",
+    "fleet",
+    "clinic",
+    "calendar"
+   ],
+   "policy": {
+    "shipping": "none",
+    "billing": "soft_delete",
+    "school": "soft_delete",
+    "tickets": "versioned",
+    "inventory": "soft_delete",
+    "crm": "versioned",
+    "hr": "none",
+    "library": "none"
+   },
+   "realized_noise": 0.41875,
+   "verified_frac": 0.21875
+  },
+  {
+   "seed": 1002,
+   "noise": 0.4,
+   "noise_type": "source",
+   "verify_rate": 0.25,
+   "train_domains": [
+    "calendar",
+    "files",
+    "billing",
+    "hr",
+    "tickets",
+    "inventory",
+    "school",
+    "clinic"
+   ],
+   "heldout_domains": [
+    "shipping",
+    "library",
+    "crm",
+    "fleet"
+   ],
+   "policy": {
+    "calendar": "versioned",
+    "files": "none",
+    "billing": "versioned",
+    "hr": "none",
+    "tickets": "none",
+    "inventory": "versioned",
+    "school": "soft_delete",
+    "clinic": "soft_delete"
+   },
+   "realized_noise": 0.371875,
+   "verified_frac": 0.2546875
+  },
+  {
+   "seed": 1003,
+   "noise": 0.4,
+   "noise_type": "source",
+   "verify_rate": 0.25,
+   "train_domains": [
+    "tickets",
+    "clinic",
+    "shipping",
+    "school",
+    "crm",
+    "hr",
+    "files",
+    "calendar"
+   ],
+   "heldout_domains": [
+    "inventory",
+    "library",
+    "billing",
+    "fleet"
+   ],
+   "policy": {
+    "tickets": "soft_delete",
+    "clinic": "none",
+    "shipping": "versioned",
+    "school": "none",
+    "crm": "none",
+    "hr": "versioned",
+    "files": "versioned",
+    "calendar": "none"
+   },
+   "realized_noise": 0.396875,
+   "verified_frac": 0.2703125
+  },
+  {
+   "seed": 1004,
+   "noise": 0.4,
+   "noise_type": "source",
+   "verify_rate": 0.25,
+   "train_domains": [
+    "library",
+    "school",
+    "files",
+    "inventory",
+    "clinic",
+    "crm",
+    "fleet",
+    "billing"
+   ],
+   "heldout_domains": [
+    "shipping",
+    "calendar",
+    "hr",
+    "tickets"
+   ],
+   "policy": {
+    "library": "none",
+    "school": "soft_delete",
+    "files": "versioned",
+    "inventory": "versioned",
+    "clinic": "versioned",
+    "crm": "soft_delete",
+    "fleet": "soft_delete",
+    "billing": "none"
+   },
+   "realized_noise": 0.3828125,
+   "verified_frac": 0.2421875
+  },
+  {
+   "seed": 1005,
+   "noise": 0.4,
+   "noise_type": "source",
+   "verify_rate": 0.25,
+   "train_domains": [
+    "shipping",
+    "tickets",
+    "school",
+    "clinic",
+    "billing",
+    "inventory",
+    "files",
+    "hr"
+   ],
+   "heldout_domains": [
+    "crm",
+    "calendar",
+    "fleet",
+    "library"
+   ],
+   "policy": {
+    "shipping": "soft_delete",
+    "tickets": "none",
+    "school": "versioned",
+    "clinic": "versioned",
+    "billing": "soft_delete",
+    "inventory": "versioned",
+    "files": "none",
+    "hr": "versioned"
+   },
+   "realized_noise": 0.38125,
+   "verified_frac": 0.2296875
+  },
+  {
+   "seed": 1006,
+   "noise": 0.4,
+   "noise_type": "source",
+   "verify_rate": 0.25,
+   "train_domains": [
+    "tickets",
+    "crm",
+    "clinic",
+    "inventory",
+    "library",
+    "school",
+    "fleet",
+    "files"
+   ],
+   "heldout_domains": [
+    "calendar",
+    "shipping",
+    "hr",
+    "billing"
+   ],
+   "policy": {
+    "tickets": "none",
+    "crm": "versioned",
+    "clinic": "none",
+    "inventory": "versioned",
+    "library": "none",
+    "school": "versioned",
+    "fleet": "none",
+    "files": "none"
+   },
+   "realized_noise": 0.390625,
+   "verified_frac": 0.2078125
+  },
+  {
+   "seed": 1007,
+   "noise": 0.4,
+   "noise_type": "source",
+   "verify_rate": 0.25,
+   "train_domains": [
+    "fleet",
+    "hr",
+    "library",
+    "shipping",
+    "school",
+    "calendar",
+    "clinic",
+    "crm"
+   ],
+   "heldout_domains": [
+    "inventory",
+    "billing",
+    "files",
+    "tickets"
+   ],
+   "policy": {
+    "fleet": "soft_delete",
+    "hr": "none",
+    "library": "none",
+    "shipping": "versioned",
+    "school": "soft_delete",
+    "calendar": "versioned",
+    "clinic": "soft_delete",
+    "crm": "none"
+   },
+   "realized_noise": 0.409375,
+   "verified_frac": 0.2828125
+  }
+ ]
+}

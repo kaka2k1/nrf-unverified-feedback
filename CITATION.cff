@@ -1,0 +1,13 @@
+cff-version: 1.2.0
+message: "If you use this code or data, please cite it as below."
+title: "When Is Unverified Feedback Worth Verifying? Code and data"
+authors:
+  - family-names: Dao
+    given-names: Phong Quyet
+    affiliation: Wisdom Research, Ho Chi Minh City, Vietnam
+    email: quyetphonga3@gmail.com
+  - family-names: Le
+    given-names: Than
+    affiliation: Institute of Engineering and Technology, Thu Dau Mot University, Vietnam
+license: MIT
+repository-code: "https://github.com/kaka2k1/nrf-unverified-feedback"

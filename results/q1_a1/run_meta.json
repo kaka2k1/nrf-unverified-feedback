@@ -1,0 +1,40 @@
+{
+ "args": {
+  "learners": [
+   "tfidf",
+   "bge_small"
+  ],
+  "seeds": 20,
+  "workers": 3,
+  "cache": "results/q1_e4/cache",
+  "out": "results/q1_a1"
+ },
+ "strategies": [
+  "random",
+  "suspicious",
+  "strat_ctx",
+  "strat_cell"
+ ],
+ "conds": [
+  [
+   "context",
+   0.4
+  ],
+  [
+   "source",
+   0.4
+  ]
+ ],
+ "rhos": [
+  0.05,
+  0.1,
+  0.25
+ ],
+ "methods": [
+  "verified_only",
+  "source_prior",
+  "ctx_eb",
+  "ca_eb"
+ ],
+ "sec": 48.588865995407104
+}
