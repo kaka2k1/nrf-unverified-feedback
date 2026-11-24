@@ -1,5 +1,7 @@
 # When Is Unverified Feedback Worth Verifying? — code and data
 
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.24487587.svg)](https://doi.org/10.5281/zenodo.24487587)
+
 Code, real-feedback annotations and per-seed results for the paper
 
 > **When Is Unverified Feedback Worth Verifying? A Budget-Aware Study of Learning from Noisy Corrections for Small Tool-Using Agents**
