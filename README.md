@@ -65,3 +65,17 @@ Each script prints its options with `--help`. GPU experiments (`annotate_bfcl.py
 ## Licence and citation
 
 Code: MIT (see `LICENSE`). If you use this repository, please cite the paper (see `CITATION.cff`).
+
+Archived release: [doi:10.5281/zenodo.24487587](https://doi.org/10.5281/zenodo.24487587).
+
+```bibtex
+@software{dao2026nrf_code,
+  author    = {Dao, Phong Quyet and Le, Than},
+  title     = {When Is Unverified Feedback Worth Verifying? Code and data},
+  year      = {2026},
+  version   = {1.0.0},
+  publisher = {Zenodo},
+  doi       = {10.5281/zenodo.24487587},
+  url       = {https://doi.org/10.5281/zenodo.24487587}
+}
+```

@@ -11,3 +11,9 @@ authors:
     affiliation: Institute of Engineering and Technology, Thu Dau Mot University, Vietnam
 license: MIT
 repository-code: "https://github.com/kaka2k1/nrf-unverified-feedback"
+doi: "10.5281/zenodo.24487587"
+version: "1.0.0"
+identifiers:
+  - type: doi
+    value: "10.5281/zenodo.24487587"
+    description: "Zenodo archive of release v1.0.0"
